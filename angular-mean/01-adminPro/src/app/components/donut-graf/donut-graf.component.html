@@ -1,0 +1,15 @@
+<div class="card">
+	<div class="card-body">
+
+		<!-- <h3> {{ title }} </h3> -->
+		<h3> {{ title }} </h3>
+		<!--Create a ramdon id for the canvas chart-->
+		<canvas #canvas [id]="id">
+			{{ chart }}
+		</canvas>
+		<ul>
+			<li *ngFor="let label of this.labels">{{ label.charAt(0).toUpperCase() + label.slice(1) }}</li>
+		</ul>
+
+	</div>
+</div>

@@ -1,0 +1,21 @@
+meta {
+  name: Update Doctor
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/api/v1/doctors/66a7615bcb3fe60d6c5ee6ff
+  body: json
+  auth: none
+}
+
+headers {
+  x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNjZhMTBlZWI4MDM3MTljMDE2NDkxYWE5IiwibmFtZSI6IkdhYnJpZWwiLCJpYXQiOjE3MjIyNDM5OTcsImV4cCI6MTc0MDk5Mjc5N30.Iy_OL3kjs4D4tTMnIoZblXy_PoClIbjxW-G2lr9ROsk
+}
+
+body:json {
+  {
+    "hospital": "66a7615bcb3fe60d6c5ee6ff"
+  }
+}

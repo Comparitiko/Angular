@@ -1,0 +1,21 @@
+meta {
+  name: Update Hospital
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/api/v1/hospitals/66a10e82803719c016491a9d
+  body: json
+  auth: none
+}
+
+headers {
+  x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNjZhMTBlZWI4MDM3MTljMDE2NDkxYWE5IiwibmFtZSI6IkdhYnJpZWwiLCJpYXQiOjE3MjIyNDM5OTAsImV4cCI6MTc0MDk5Mjc5MH0.jVMYw_-g-2sq7tEzyl5NdHOdt-u03A04xV3sIPwZoOY
+}
+
+body:json {
+  {
+    "name": "Hospital Regional del norte"
+  }
+}

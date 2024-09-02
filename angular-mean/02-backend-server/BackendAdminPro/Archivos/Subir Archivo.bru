@@ -1,0 +1,19 @@
+meta {
+  name: Subir Archivo
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:3000/api/v1/upload/usuarios/66b5f853d3fe724ccb22bf5a
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNjZhMTBlZWI4MDM3MTljMDE2NDkxYWE5IiwibmFtZSI6IkdhYnJpZWwiLCJpYXQiOjE3MjIxMTgyNjIsImV4cCI6MTc0MDg2NzA2Mn0.jzypEMsr1bryFugdPtCuUm2ELzD-3I7LBlKRPmCJgmE
+}
+
+body:multipart-form {
+  image: @file(/home/comparitiko/datos_disk/Wallpapers/react-wall.png)
+}

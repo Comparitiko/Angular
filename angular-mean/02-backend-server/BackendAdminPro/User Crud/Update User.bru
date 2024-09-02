@@ -1,0 +1,25 @@
+meta {
+  name: Update User
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/api/v1/users/667c4342b63139275484c112
+  body: json
+  auth: none
+}
+
+headers {
+  x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNjY3YzQyZTlmOGUxN2EzM2I3Y2Q3MTlkIiwibmFtZSI6IkdhYnJpZWwiLCJpYXQiOjE3MTk4MTk0OTcsImV4cCI6MTcxOTgyNjY5N30.QiLrZrSCeRopa8wNRhu3TsiifP2SHl7sI3V7ETMotRc
+}
+
+body:json {
+  {
+    "name": "Gabriel",
+    "lastName": "Collado Yañez",
+    "email": "gabriel@gmail.com",
+    "password": "123456",
+    "google": true
+  }
+}

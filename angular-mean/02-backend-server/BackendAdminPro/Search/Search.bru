@@ -1,0 +1,19 @@
+meta {
+  name: Search
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/api/v1/search/?q=ga
+  body: none
+  auth: none
+}
+
+params:query {
+  q: ga
+}
+
+headers {
+  x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNjY3YzQyZTlmOGUxN2EzM2I3Y2Q3MTlkIiwibmFtZSI6IkdhYnJpZWwiLCJpYXQiOjE3MTk4Mjk1NjcsImV4cCI6MTczODU3ODM2N30.PTI492cLjDSL8Bm7M58oTawld3_k1jPj-hIT2U7XZGo
+}

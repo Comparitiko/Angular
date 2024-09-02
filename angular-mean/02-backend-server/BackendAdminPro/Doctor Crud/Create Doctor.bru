@@ -1,0 +1,24 @@
+meta {
+  name: Create Doctor
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/v1/doctors
+  body: json
+  auth: none
+}
+
+headers {
+  x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNjZhMTBlNjQ4MDM3MTljMDE2NDkxYTk5IiwibmFtZSI6IlRlc3QxNSIsImlhdCI6MTcyMTgzMTAxMiwiZXhwIjoxNzQwNTc5ODEyfQ._WCrscMhtWZKS-3olXWEwS678DfpF0hU1nMOjVP5Osg
+}
+
+body:json {
+  {
+    "dni": "12345678A",
+    "name": "Doctor 2",
+    "lastName": "DoctorLastName 2 DoctorLastName 2",
+    "hospital": "66a10e82803719c016491a9d"
+  }
+}

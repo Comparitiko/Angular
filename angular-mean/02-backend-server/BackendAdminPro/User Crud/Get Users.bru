@@ -1,0 +1,20 @@
+meta {
+  name: Get Users
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/api/v1/users
+  body: none
+  auth: none
+}
+
+params:query {
+  ~page: 5
+  ~limit: 3
+}
+
+headers {
+  x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNjZiNWY4NTNkM2ZlNzI0Y2NiMjJiZjVhIiwibmFtZSI6IkdhYnJpZWwiLCJpYXQiOjE3MjMyOTU0NzgsImV4cCI6MTc0MjA0NDI3OH0.IuZchAYZmNT4XIIlUvzeMMMrofjlmAE0Cus6y_yTTAA
+}

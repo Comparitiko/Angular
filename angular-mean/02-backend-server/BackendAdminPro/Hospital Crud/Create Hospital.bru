@@ -1,0 +1,21 @@
+meta {
+  name: Create Hospital
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/v1/hospitals
+  body: json
+  auth: none
+}
+
+headers {
+  x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNjZhMTBlNjQ4MDM3MTljMDE2NDkxYTk5IiwibmFtZSI6IlRlc3QxNSIsImlhdCI6MTcyMTgzMTAxMiwiZXhwIjoxNzQwNTc5ODEyfQ._WCrscMhtWZKS-3olXWEwS678DfpF0hU1nMOjVP5Osg
+}
+
+body:json {
+  {
+    "name": "Hospital 2"
+  }
+}
