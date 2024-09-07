@@ -1,8 +1,15 @@
+@let resulTextLocal = resultText();
+@let subResultTextLocal = subResultText();
+@let lastOperatorLocal = lastOperator();
+
+
 <div class="w-screen max-w-[300px] h-40 bg-gradient-to-b from-gray-800 to-gray-700 flex items-end text-right">
   <div class="w-full py-5 px-6 text-6xl text-white font-thin">
-    <span class="text-4xl">50 +</span>
+    @if (subResultTextLocal!== '0') {
+    <span id="sub-result" class="text-4xl">{{subResultTextLocal}} {{lastOperatorLocal}}</span>
     <br>
-    <span>340.0</span>
+    }
+    <span class="result-text">{{resulTextLocal}}</span>
   </div>
 </div>
 <div class="w-full bg-gradient-to-b from-indigo-400 to-indigo-500">

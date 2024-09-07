@@ -2,11 +2,10 @@ import {
   ChangeDetectionStrategy,
   Component,
   ElementRef,
-  HostBinding,
   input,
   output,
   signal,
-  viewChild,
+  viewChild
 } from '@angular/core';
 
 @Component({
@@ -17,7 +16,9 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './calculator-button.component.css',
   host: {
-    class: 'w-1/4 border-r border-b border-indigo-400',
+    class: 'border-r border-b border-indigo-400',
+    '[class.w-2/4]': 'this.isEqual()',
+    '[class.w-1/4]': '!this.isEqual()'
     // 'data-size': 'xl',
   },
   // encapsulation: ViewEncapsulation.None,
@@ -43,13 +44,13 @@ export class CalculatorButtonComponent {
   //   return this.isEqual();
   // }
 
-  @HostBinding('class.w-2/4')
-  get equalStyle() {
-    return this.isEqual();
-  }
+  // @HostBinding('class.w-2/4')
+  // get equalStyle() {
+  //   return this.isEqual();
+  // }
 
   handleClick() {
-    if (!this.contentValue()?.nativeElement) return;
+    if (!this.contentValue()!.nativeElement) return;
     const value = this.contentValue()!.nativeElement.innerText;
     this.onClick.emit(value.trim());
   }
